@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>李琴情人节快乐</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<script src="js/jquery.1.9.1.min.js" type="text/javascript"></script>
+	<script src="js/jquery.quoterotator.min.js" type="text/javascript"></script>
+	<script>
+	jQuery(document).ready(function($) {
+		$('#words').quoteRotator();
+	});
+	</script>
+
+</head>
+
+<body>
+<div id="wrapper" style="text-align: center; margin-top: 40px;">
+	<canvas id="c"></canvas>
+	<div id="words">
+		<ul class="word-container">
+			<li data-author="" data-easeout="lightSpeedOut">
+				有 些 人 浅 薄，有 些 人 金 玉 其 外，而 败 絮 其 中，有 一 天 你 会 遇 到 一 个 彩 虹 般 绚 丽 的 人，</li>
+			<li data-author="">当 你 遇 到 这 个 人 以 后，会 觉 得 其 他 人 只 是 浮 云。</li>
+			<li data-author="" data-easeout="fadeOutDown">
+				你 就 是 我 遇 到 的 这 位 彩 虹 般 绚 丽 的 女 生，当 我 遇 到 你 后，其 他 人 都 只 是 浮 云，对 任 何 女 生 都 失 去 了 兴 趣。</li>
+			<li data-author="" data-easein="fadeInDown">
+				虽 然 你 有 些 高 冷，但 你 的 高 雅 聪 慧 善 良 可 爱 和 魅 力 等 深 深 的 吸 引 了 我，让 我 怦 然 心 动。</li>
+			<li data-author="" data-easeout="bounceOut">
+				在 2 1 4 情 人 节 的 今 天，在 网 络 上，在 深 圳，我 继 续 表 白 你，我 想 对 你 说：我 很 喜 欢 你。</li>
+			<li data-author="--- 张习科" data-easein="bounceIn">
+			 李 琴，情 人 节 快 乐 哦！</li>			
+		</ul>
+		<div class="quote">
+			<blockquote>
+			  <p class="quote-content"></p>
+			</blockquote>
+			<cite class="quote-author"></cite>
+		</div>
+	</div>
+
+</div>
+</div>
+</body>
+<script>
+	var b = document.body;  
+var c = document.getElementsByTagName('canvas')[0];  
+var a = c.getContext('2d');  
+document.body.clientWidth;  
+
+with(m=Math)C=cos,S=sin,P=pow,R=random;c.width=c.height=f=600;h=-250;function p(a,b,c){if(c>60)return[S(a*7)*(13+5/(.2+P(b*4,4)))-S(b)*50,b*f+50,625+C(a*7)*(13+5/(.2+P(b*4,4)))+b*400,a*1-b/2,a];A=a*2-1;B=b*2-1;if(A*A+B*B<1){if(c>37){n=(j=c&1)?6:4;o=.5/(a+.01)+C(b*125)*3-a*300;w=b*h;return[o*C(n)+w*S(n)+j*610-390,o*S(n)-w*C(n)+550-j*350,1180+C(B+A)*99-j*300,.4-a*.1+P(1-B*B,-h*6)*.15-a*b*.4+C(a+b)/5+P(C((o*(a+1)+(B>0?w:-w))/25),30)*.1*(1-B*B),o/1e3+.7-o*w*3e-6]}if(c>32){c=c*1.16-.15;o=a*45-20;w=b*b*h;z=o*S(c)+w*C(c)+620;return[o*C(c)-w*S(c),28+C(B*.5)*99-b*b*b*60-z/2-h,z,(b*b*.3+P((1-(A*A)),7)*.15+.3)*b,b*.7]}o=A*(2-b)*(80-c*2);w=99-C(A)*120-C(b)*(-h-c*4.9)+C(P(1-b,7))*50+c*2;z=o*S(c)+w*C(c)+700;return[o*C(c)-w*S(c),B*99-C(P(b, 7))*50-c/3-z/1.35+450,z,(1-b/1.2)*.9+a*.1, P((1-b),20)/4+.05]}}setInterval('for(i=0;i<1e4;i++)if(s=p(R(),R(),i%46/.74)){z=s[2];x=~~(s[0]*f/z-h);y=~~(s[1]*f/z-h);if(!m[q=y*f+x]|m[q]>z)m[q]=z,a.fillStyle="rgb("+~(s[3]*h)+","+~(s[4]*h)+","+~(s[3]*s[3]*-80)+")",a.fillRect(x,y,1,1)}',0)
+
+</script>
+</html>

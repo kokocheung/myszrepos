@@ -1,1 +1,1 @@
-# myszrepos
+myrepos
